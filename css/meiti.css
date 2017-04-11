@@ -1,0 +1,455 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	box-sizing: border-box;
+	/*background:#F5F6FA ;*/
+	/*font-size: 0.08rem;*/
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	overflow: scroll;
+}
+
+/*头部开始*/
+.header{
+	width:100%;
+	height:0.44rem;
+	/*background:#007BE3;*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	
+}
+.header .header1{
+	width:100%;
+	height:0.44rem;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+  
+
+	
+.header a{
+	display: block;
+	width:20%;
+	height:98%;
+	color:#fff;
+	font-size: 0.15rem;
+	text-align: center;
+	line-height: 0.44rem;
+	
+}
+.header .shizi{
+    width: 18%;
+	border-bottom: 0.03rem solid #fff;
+}
+
+
+.header .span{
+
+	width:0.73rem;
+	height:0.31rem;
+	background-color: rgb(3, 21, 155);
+    color: rgb(255, 255, 255);
+    border-radius: 0.05rem;
+    font-size: 0.12rem;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 0.06rem;
+    left: 78%;
+    right: 3%;
+    height: 0.29rem;
+    line-height: 0.29rem;
+    border-radius:0.05rem;
+    font-size: 0.12rem;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 4;
+}
+
+
+
+/*头部结束*/
+
+
+/*banner开始*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    background: url(../img/shizibanner1.jpg) center center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+/*banner结束*/
+
+
+/*目录开始*/
+.tea_content {
+    width: 100%;
+    padding: 0.05rem 0.12rem 0;
+}
+.tea_content .mulu {
+    height: 0.31rem;
+    line-height: 0.31rem;
+    width: 100%;
+}
+.tea_content .mulu a {
+    color: #494747;
+    font-size: 0.11rem;
+    line-height: 0.35rem;
+    float: left;
+    margin: 0 0.07rem;
+    font-weight: bold;
+}
+.tea_content .mulu a:nth-child(1) {
+    margin-left: 0;
+ }
+ .tea_content .mulu span {
+    float: left;
+    width: 0.08rem;
+    height: 0.1rem;
+    margin-top: 0.13rem;
+    font-size: 0.11rem;
+    text-align: center;
+    color: #494747;
+    background-size: 100%;
+    background: url(../img/jiantou.png ) center center no-repeat;
+    overflow: hidden;
+}
+.media {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0.03rem 0.12rem 0.14rem;
+    border-bottom: 0.015rem  solid #f5f6fa;
+    box-sizing: border-box;
+}
+.media a {
+    display: block;
+    margin-top: 0.17rem;
+}
+.media a h2 {
+    font-size: 0.14rem;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 0.11rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.media a .media_con {
+    height: 0.9rem;
+    border-bottom: 0.005rem solid #b8b8b8;
+}
+.media a .media_con .img {
+    width: 1.03rem;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.media a .media_con .img .floor {
+    width: 0.925rem;
+    height: 0.725rem;
+    background: url(../img/media_line.png) 0 0 no-repeat;
+    background-size: cover;
+    float:right;
+}
+
+.media a .media_con p {
+    float: right;
+    width:2.05rem;
+    height: 0.7rem;
+    font-size: 0.12rem;
+    color: #494747;
+    line-height: 0.18rem;
+    overflow: hidden;
+}
+
+.media a .media_con .img .ceil {
+    width: 0.95rem;
+    height:0.75rem;
+    position: absolute;
+    background-color: #c8c8c8;
+    top: 0.075rem;
+    left: 0rem;
+}
+.media a .media_con .img .ceil img {
+    width: 100%;
+    height: 100%;
+  	display: block;
+}
+.media a .media_rem {
+    height: 0.3rem;
+    border-bottom: 0.005rem solid #b8b8b8;
+}
+
+.media a .media_rem .time {
+    width:1.05rem;
+    float: left;
+}
+.media a .media_rem div {
+    height: 100%;
+    line-height: 0.3rem;
+}
+.media a .media_rem .time i {
+    background: url(../img/media_icon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.media a .media_rem div i {
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-top: 0.09rem;
+    float: left;
+    margin-right: 0.0125rem;
+}
+.media a .media_rem div span {
+	/*display: block;*/
+    font-size: 0.1rem;
+    float: left;
+    margin-top: -0.005rem;
+    color: #666;
+}
+.media a .media_rem .click {
+    width: 1.2rem;
+    float: left;
+}
+.media a .media_rem .click i {
+    background: url(../img/media_icon.png) -0.16rem 0 no-repeat;
+    background-size: cover;
+   }
+   .media a .media_rem .share {
+    /*width: 1rem;*/
+    float: right;
+    overflow: hidden;
+}
+
+.media a .media_rem .share i {
+    background: url(../img/media_icon.png) -0.35rem 0 no-repeat;
+    background-size: cover;
+   }
+/*目录结束*/
+
+
+/*条目开始*/
+.yema {
+    width: 100%;
+    height: auto;
+}
+
+.tea_tiaos {
+    height: 0.4rem;
+    padding-top: 0.075rem;
+}
+.tea_tiao {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+}
+.yemas .tea_tiao a:nth-child(1) {
+    margin-left: 0.14rem;
+}
+.tea_tiaos a:nth-child(1) {
+    width: 0.25rem;
+    margin-left: 0.3rem;
+    background: url(../img/s1.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a {
+    float: left;
+    padding: 0.05rem;
+    height: 0.25rem;
+    border-radius: 0.2rem;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.15rem;
+    margin-right: 0.07rem;
+}
+
+.tea_tiaos a:nth-child(2) {
+    width: 0.75rem;
+    background: url(../img/s2.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a.a1 {
+    border: 0.005rem solid #666;
+    letter-spacing:0.005rem;
+    color: #666;
+    width: 0.7rem;
+}
+.tea_tiaos a:nth-child(4) {
+    width: 0.7rem;
+    background: url(../img/s3.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a:nth-child(5) {
+    width: 0.25rem;
+    background: url(../img/s4.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+/*条目结束*/
+
+
+
+/*copyright开始*/
+.tea_copyright {
+    width: 100%;
+    height:0.6rem;
+    font-size: 0.15rem;
+    overflow: hidden;
+    background: #F5F6FA;
+}
+.tea_copyright p {
+    color: #666;
+    font-size: 0.1rem;
+    text-align: center;
+    padding-top: 0.09rem;
+    }
+    
+    
+.cc{
+	width:100%;
+	height:0.3rem;
+}
+/*copyright结束*/
+
+
+/*底部开始*/
+.contact{
+    width: 100%;
+    height: 0.45rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+   position: fixed;
+    left: 0;
+    bottom: 0;
+  	/*position: absolute;
+	bottom:0;*/
+	
+  z-index: 21;
+    }
+.contact .contact-list{
+ 	width: 100%;
+    height: 100%;
+    background:#e7e7e7;
+    text-align: center;
+   }
+.contact a {
+    width: 30%;
+    height: 0.8rem;
+    float: left;
+  }
+.contact a span{
+	float: left;
+    font-size: 0.13rem;
+     margin-top: 0.03rem;
+     margin-right: 0.03rem;
+    text-align: center;
+   }
+   .contact .phone {
+    width: 40%;
+    height: 0.9rem;
+    position: relative;
+    z-index: 99999;
+    box-shadow: 0 0 0.08rem rgba(255,126,0,0.1);
+    margin-top: -0.1rem;
+    /*background:#ff8d12;
+    border-radius: 0.05rem;*/
+   background: #E7E7E7;    }
+    .contact a div .part2 span {
+    float: left;
+    font-size: 0.15rem;
+    font-weight: bold;
+   /* margin-left: 0.5rem;*/
+      margin-top: 0.2rem;
+      color:#fff;
+      border-radius: 0.08rem;
+   }
+      
+    .contact a div {
+    width: 100%;
+    height: 100%;
+    font-size: 0.12rem;
+    color: #000;
+    text-align: left;
+    line-height: 0.35rem;
+    background: #e7e7e7;
+}
+   .contact a  .part2 {
+   width:100%;
+   height:0.45rem;
+    border-radius: 0.08rem;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 0.15rem #ff8d12;
+    background-color: #ff8d12;
+    margin-top: -0.0001rem;
+    
+}
+.contact a div.part3 span{
+}
+.contact a div.part3{
+	text-align: center;
+}
+.ss{
+	width:100%;
+	height:0.4rem;
+}
+.contact a .part1 i {
+	
+    background:url(../img/di1.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part2 i {
+	
+    background:url(../img/tubiao.png) -0.8rem -2.4rem no-repeat;
+    background-size: 100%;
+    width: 0.18rem;
+    height: 0.18rem;
+   
+    background-size:1rem;
+    display: inline-block;
+    line-height: 0.45rem;
+    margin-left: 0.35rem;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part3 i {
+    width: 0.18rem;
+    height: 0.18rem;
+    background: url(../img/tubiao.png) -0.8rem -2.6rem no-repeat;
+    background-size: 1rem;
+    display: inline-block;
+    margin-left: 0.21rem;
+}
+
+/*底部结束*/

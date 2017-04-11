@@ -1,0 +1,1095 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	box-sizing: border-box;
+	/*background:#F5F6FA ;*/
+	/*font-size: 0.08rem;*/
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	overflow: scroll;
+}
+/*头部开始*/
+.header{
+	width:100%;
+	height:0.44rem;
+	/*background:#007BE3;*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	
+}
+.header .header1{
+	width:100%;
+	height:0.44rem;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+  
+
+	
+.header a{
+/*	display: block;*/
+	width:20%;
+	height:100%;
+	color:#fff;
+	font-size: 0.15rem;
+	text-align: center;
+	line-height: 0.44rem;
+	
+}
+
+
+.header .span{
+
+	width:0.73rem;
+	height:0.31rem;
+	background-color: rgb(3, 21, 155);
+    color: rgb(255, 255, 255);
+    border-radius: 0.05rem;
+    font-size: 0.12rem;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 0.06rem;
+    left: 78%;
+    right: 3%;
+    height: 0.29rem;
+    line-height: 0.29rem;
+    border-radius:0.05rem;
+    font-size: 0.12rem;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 4;
+}
+
+/*头部结束*/
+
+/*banner开始*/
+.banner {
+   position: relative;
+    width: 100%;
+    height: 2.5rem;
+    background: url(../img/phpbanner.png) center center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.banner a {
+    display: block;
+    width:1.05rem;
+    height: 0.28rem;
+    background: url(../img/phpbtn.png) center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 1.4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.28rem;
+    font-size: 0.14rem;
+}
+/*banner结束*/
+
+
+/*为什么选择php开始*/
+.ui1 {
+    height:2.9rem;
+    overflow: hidden;
+}
+
+.ui {
+    width: 100%;
+   /* position: relative;*/
+}
+.ui1title{
+    width: auto;
+    height: 0.7rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0.02rem 0.02rem rgba(0,0,0,0.2);
+    padding: 0.1rem 0;
+    margin: 0 auto;
+   position: relative;
+}
+
+.ui h2{
+    width: auto;
+    height: 0.2rem;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.18rem;	
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+    position: absolute;
+    left:1.4rem;
+    z-index: 10;
+ }
+ 
+ .juxing{
+    width:0.5rem;
+    height: 0.42rem;
+    position: absolute;
+    top: 0.15rem;
+    left:1.1rem;
+    background: url(../img/juxing.png) center center no-repeat;
+    background-size: 100%;
+    z-index: 0;
+   }
+   
+.shuzi{
+	width:0.33rem;
+	height:0.39rem;
+	position: absolute;
+	left: 0.95rem;
+	top:0.25rem;
+	margin-right: 0.1rem;
+}
+.shuzi1{
+background:url(../img/phpshuzi.png) center center no-repeat; }
+background-size:100%;
+}
+.ui span {
+   font-weight:100;
+    text-align: center;
+    line-height: 0.2rem;
+   font-size: 0.18rem;
+    color: #333;
+    font-weight: normal;
+ }
+ .xian{
+ width: 0.55rem;
+    height: 0.03rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.14rem;
+    background: url(../img/xian.png) center center no-repeat;
+    background-size: 100%;
+ }
+.ui1con {
+    width: 3.5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.ui1cont {
+    width: 100%;
+    height: 2.1rem;
+    overflow: hidden;
+  
+}
+.php1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0.2rem;
+    padding-top: 0.22rem;
+    border: 0.005rem solid #1bbf99;
+    border-top: 0;
+}
+.php1 p {
+    color: #333;
+    font-size: 0.12rem;
+    line-height: 0.2rem;
+    margin-top: 0.08rem;
+}
+.php2 {
+    width:3.5rem;
+    height: 0.03rem;
+    border:0.005rem solid #1bbf99;
+    border-top: 0;
+    margin: 0 auto;
+}
+.php3 {
+    width: 6.8rem;
+}
+
+/*为什么选择php结束*/
+
+/*六大服务开始*/
+.shuzi2 {
+    left: 0.8rem;
+    background: url(../img/shuzi2.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui0B {
+    width: 3.4rem;
+    height: 2.7rem;
+   margin: 0.1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ui0B div{
+	width:1.05rem;
+	height:1.25rem;
+}
+.ui0B>div:nth-child(1) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu1.png) center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(1) .word{
+    width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #F2A111;
+    
+   } 
+    
+ .ui0B>div:nth-child(2) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu2.png)  center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(2) .word{
+    width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #2F90DA;
+    }
+    
+.ui0B>div:nth-child(3) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu3.png)  center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(3) .word{
+    width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #F87844;
+ }
+ 
+ .ui0B>div:nth-child(4) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu4.png)  center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(4) .word{
+    width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #1BBF99;
+ }
+ 
+ .ui0B>div:nth-child(6) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu6.png)  center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(6) .word{
+    width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #C16BBB;
+ }
+ .ui0B>div:nth-child(5) .ling{
+
+   width: 1.05rem;
+    height: 0.55rem;
+    background: url(../img/fuwu5.png)  center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:0.55rem;
+    font-weight: 600;
+   padding-left: 0.4rem;
+}
+.ui0B>div:nth-child(5) .word{
+width: 1.05rem;
+    height: 0.7rem;
+    color: #333;
+    font-size: 0.07rem;
+    line-height: 0.16rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    border: 0.005rem dashed #C16BBB;
+  }
+/*六大服务全程结束*/
+
+
+
+/*php就业前景开始*/
+.shuzi3{
+    left: 1rem;
+    background: url(../img/shuzi3.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui2box{
+    width: 100%;
+    height:4.5rem;
+    background: #1b1d32;
+    margin-top: -0.2rem;
+    padding-top: 0.2rem;
+}
+.ui2bt {
+    width: 1.85rem;
+    height: 0.42rem;
+    margin: 0 auto;
+    padding: 0.1rem;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.15rem;
+    border-bottom: 0.005rem dashed #fff;
+    position: relative;
+    color: #00c298;
+    margin-top: 0.3rem;
+}
+.ui2tiao {
+    width: 100%;
+    height: 0.01rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0.05rem;
+}
+.ui2z{
+    width: 100%;
+    height: 0.41rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #1b1d32;
+}
+.ui2bfb {
+    width:3.5rem;
+    height:2.21rem;
+    margin: 0 auto;
+    margin-top: 0.35rem;
+    overflow: hidden;
+}
+.ui2bfb1{
+
+    width:1.7rem;
+    height:2.21rem;
+    border: 0.005rem  solid #fff;
+}
+.ui2bfb2{
+	float:left;
+}
+.ui2bfb3{
+	float:right;
+}
+.ui2box p {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.13rem;
+    color: #fff;
+    margin-top: 0.1rem;
+}
+.ui2bfb p span {
+    color: #e47749;
+}
+.ui2bfb img {
+    width: 1.7rem;
+    height:1.1rem;
+}
+.phpjs {
+    width:1.7rem;
+    height: 0.7rem;
+    border-top: 0.005rem solid #fff;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.15rem;
+    color: #fff;
+    padding: 0.05rem 0.05rem;
+    letter-spacing: -0.4px;
+}
+.btn {
+    display: block;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin: 0.2rem auto;
+    background: url(../img/btn.png) center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+  }
+/*php就业前景结束*/
+
+
+/*事实胜于雄辩开始*/
+.shuzi4{
+    left:1rem; 
+    background: url(../img/shuzi4.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.ui1con {
+    width: 3.5rem;
+    height: 100%;
+    margin: 0 auto;
+    /*position: absolute;
+    top: 0.5rem;*/
+  /*  left:0.2rem;*/
+   }
+.stu_lists {
+    width: 3.5rem;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+   /* margin-left: 0.2rem;*/	
+}
+.title_name {
+    width: 100%;
+    height: 0.3rem;
+ }
+ 
+ .title_name p {
+    color: #fff;
+    font-size: 0.13rem;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+    background: #40abfd;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 0.65rem;
+   }
+   p {
+    margin-top: 0rem;}
+    
+.title_name p:nth-child(2) {
+    width: 0.9rem;
+    background: #219eff;
+    }
+ .title_name p:nth-child(3) {
+    width: 1.9rem;
+    background: #118ded;
+}
+div.big_box {
+    width: 3.45rem;
+    height: 1.7rem;
+    overflow: hidden;
+}
+.big_box {
+    width: 3rem;
+    height: 1.75rem;
+    border: 0.005rem solid #1875ff;
+ }
+.big_box div{
+	height:0.34rem;
+	font-size: 0.07rem;
+
+}
+
+.big_box .lie1{
+	background:#EEEEEE ;
+	text-align: center;
+}
+.big_box .lie2{
+
+	text-align: center;
+}
+.big_box div p{
+	display: inline-block;
+	margin-right: 0.1rem;
+	line-height: 0.34rem;
+}
+
+.big_box .p1{
+	color:#FDB84E;
+}
+/*事实胜于雄辩结束*/
+
+
+/*课程规划开始*/
+.web1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ui4 {
+    background: #1b1d32;
+    padding-bottom: 0.5rem;
+   height: 6rem;
+}
+.shuzi5{
+	left:1rem; 
+    background: url(../img/shuzi5.png) center center no-repeat;
+    background-size: 100%;	
+}
+    
+.ui4con{  
+    position: relative;
+    margin-top: 0.3rem;
+    height:5rem;
+ 
+}
+.web1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ui4con li {
+    width: 100%;
+    height: 0.75rem;
+    overflow: hidden;
+    padding: 0.05rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.php41{
+    width: 0.27rem;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.phpshuzi{
+    width: 0.27rem;
+    height: 0.27rem;
+    border: 0.01rem solid #ffd300;
+    text-align: center;
+    line-height: 0.25rem;
+    font-size: 0.15rem;
+    color: #fff;
+ 
+}
+.phpxian {
+    width: 0.01rem;
+    height: 0.49rem;
+    background: #ffd300;
+    margin: 0 auto;
+
+}
+.php4r {
+    width:2.8rem;
+    height: 0.75rem;
+    float: right;
+    margin-left: 0.15rem;
+}
+.ui4con .ui1 span {
+    font-size: 0.14rem;
+    color: #ffd300;
+    display: block;
+}
+
+.ui4con li p {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0.05rem;
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 0.17rem;
+    padding: 0.05rem 0;
+    text-align: justify;
+}
+.php4rcon {
+    width: 100%;
+    height: 100%;
+}
+.phpshuzi2 {
+    border: 0.01rem solid #DD534E;
+}
+.ui4con .ui2 span {
+    font-size: 0.14rem;
+    color: #DD534E;
+    display: block;
+}
+.phpshuzi3 {
+    border: 0.01rem solid #72A070;
+}
+.ui4con .ui3 span {
+    font-size: 0.14rem;
+    color: #72A070;
+    display: block;
+}
+.phpshuzi4 {
+    border: 0.01rem solid #1FA4DB;
+}
+.ui4con .ui4 span {
+    font-size: 0.14rem;
+    color: #1FA4DB;
+    display: block;
+}
+.phpshuzi5 {
+    border: 0.01rem solid #F6CE64;
+}
+.ui4con .ui5 span {
+    font-size: 0.14rem;
+    color: #F6CE64;
+    display: block;
+}
+.phpshuzi6 {
+    border: 0.01rem solid #A86BAA;
+}
+.ui4con .ui6 span {
+    font-size: 0.14rem;
+    color: #A86BAA;
+    display: block;
+}
+.ui1 p {
+    border-top: 1px dashed #ffd300;
+}
+.ui2 p {
+    border-top: 1px dashed #DD534E;
+}
+.ui3 p {
+    border-top: 1px dashed #72A070;
+}
+.ui4 p {
+    border-top: 1px dashed #1FA4DB;
+}
+.ui5 p {
+    border-top: 1px dashed #F6CE64;
+}
+.ui6 p {
+    border-top: 1px dashed #A86BAA;
+}
+/*课程规划结束*/
+
+
+/*就业方向开始*/
+.shuzi6{
+    left:1rem; 
+    background: url(../img/shuzi6.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui5con {
+    height: auto;
+    overflow: hidden;
+}
+
+.ui5con ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.ui5con li {
+    width: 100%;
+    height: 0.5rem;
+    overflow: hidden;
+}
+.ui5con li div {
+    color: #333;
+    font-size: 0.12rem;
+    line-height: 0.55rem;
+    padding-left: 0.44rem;
+}
+.phpzw1 {
+    width: 1.2rem;
+    height: 100%;
+    background: url(../img/jiuye1.png) center center no-repeat;
+    background-size: 100%;
+    margin-left: -3rem;
+    float: left;
+ }
+ .phpzw2{
+    width: 1.35rem;
+    height: 100%;
+    background: url(../img/jiuye2.png) center center no-repeat;
+    background-size: 100%;
+    margin-left: -3rem;
+    float: right;
+}
+   .phpzw3 {
+    width: 1.25rem;
+    height: 100%;
+    background: url(../img/jiuye3.png) center center no-repeat;
+    background-size: 100%;
+}
+.phpzw4 {
+    width:1.3rem;
+    height: 100%;
+    background: url(../img/jiuye4.png) center center no-repeat;
+    background-size: 100%;
+    float: left;
+}
+.phpzw5 {
+    width: 1.25rem;
+    height: 100%;
+    background: url(../img/jiuye6.png) center center no-repeat;
+    background-size: 100%;
+    float: right;
+}
+.phpzw6 {
+    width: 1.5rem;
+    height: 100%;
+    background: url(../img/jiuye7.png) center center no-repeat;
+    background-size: 100%;
+    float: right;
+  }
+/*就业方向结束*/
+
+
+/*你的顾虑开始*/
+
+.ui6 {
+    background: #1b1d32;
+    height: 3.65rem;
+}
+
+.shuzi7{
+    left:1rem; 
+    background: url(../img/shuzi7.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui6con {
+    margin-top: 0.5rem;
+    height: auto;
+    overflow: hidden;
+}
+.php6bot {
+    width:0.95rem;
+    height: 1.7rem;
+    float: left;
+    background: url(../img/gulv1.png) center center no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 20;
+  }
+.web5bot {
+    width: 2.9rem;
+    height: 1.45rem;
+    border: 0.005rem  solid #ffd300;
+    border-left: none;
+    float: left;
+    margin-top: 0.08rem;
+    
+ }
+.web5bot ul {
+    width: 2.9rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.web5bot li {
+    width: 94%;
+    height: 0.3rem;
+    border-bottom: 0.005rem dashed #ffd300;
+    overflow: hidden;
+}
+.web5bot a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-left: 0.75rem;
+    font-size: 0.13rem;
+    line-height: 0.35rem;
+}
+
+.btn {
+    display: block;
+    width: 1.5rem;
+    height: 0.4rem;
+    margin: 0.2rem auto;
+    background: url(../img/btn.png) center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+ }
+/*您的顾虑结束*/
+
+
+/*免费试听开始*/
+
+.shuzi8{
+    left:1rem; 
+    background: url(../img/shuzi8.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui7con p {
+    width: 100%;
+    height: 0.42rem;
+    font-size: 0.14rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.43rem;
+}
+
+.biaodan .content {
+    padding: 0 0.35rem 0;
+}
+
+.form div{
+	width: 100%;
+    height: 0.3rem;
+    margin:0.15rem auto;
+}
+.biaodan .text1{
+   float: left;
+    color: #333;
+    font-size: 0.15rem;
+    background: url(../img/input.png) center center no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+    width:2.0rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-indent: 0.5em;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+}
+.form{
+	margin:0.2rem auto;
+}
+.biaodan strong{
+	color:red;
+	margin-right: 0.1rem;
+}
+.submit {
+    width: 100%;
+    height: 100%;
+   }
+   
+ .submit input {
+    display: block;
+    width: 1.5rem;
+    height: 0.4rem;
+    text-indent: 0;
+    color: #fff;
+    background: url(../img/btn.png) center center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    line-height: 0.4rem;
+    outline: none;
+    border: none;
+    font-size: 0.15rem;
+    margin:0.6rem auto 0 auto;
+}
+.biaodan span{
+    width: 0.6rem!important;
+    height: 0.3rem;
+    display: block;
+    color: #333;
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+    float: left;
+    margin-top: 0.2rem;
+    border: none!important;
+}
+
+/*免费试听结束*/
+
+
+/*copyright开始*/
+.tea_copyright {
+    width: 100%;
+    height:0.6rem;
+    font-size: 0.15rem;
+    overflow: hidden;
+    background: #F5F6FA;
+}
+.tea_copyright p {
+    color: #666;
+    font-size: 0.1rem;
+    text-align: center;
+    padding-top: 0.09rem;
+    }
+    
+    
+.cc{
+	width:100%;
+	height:0.3rem;
+}
+/*copyright结束*/
+
+
+
+/*底部开始*/
+.contact{
+    width: 100%;
+    height: 0.45rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+   position: fixed;
+    left: 0;
+    bottom: 0;
+  	/*position: absolute;
+	bottom:0;*/
+	
+  z-index: 21;
+    }
+.contact .contact-list{
+ 	width: 100%;
+    height: 100%;
+    background:#e7e7e7;
+    text-align: center;
+   }
+.contact a {
+    width: 30%;
+    height: 0.8rem;
+    float: left;
+  }
+.contact a span{
+	float: left;
+    font-size: 0.13rem;
+     margin-top: 0.03rem;
+     margin-right: 0.03rem;
+    text-align: center;
+   }
+   .contact .phone {
+    width: 40%;
+    height: 0.9rem;
+    position: relative;
+    z-index: 99999;
+    box-shadow: 0 0 0.08rem rgba(255,126,0,0.1);
+    margin-top: -0.1rem;
+    /*background:#ff8d12;
+    border-radius: 0.05rem;*/
+   background: #E7E7E7;    }
+    .contact a div .part2 span {
+    float: left;
+    font-size: 0.15rem;
+    font-weight: bold;
+   /* margin-left: 0.5rem;*/
+      margin-top: 0.2rem;
+      color:#fff;
+      border-radius: 0.1rem;
+  }
+      
+    .contact a div {
+    width: 100%;
+    height: 100%;
+    font-size: 0.12rem;
+    color: #000;
+    text-align: left;
+    line-height: 0.35rem;
+    background: #e7e7e7;
+}
+   .contact a  .part2 {
+   width:100%;
+   height:0.45rem;
+    border-radius: 0.08rem;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 0.15rem #ff8d12;
+    background-color: #ff8d12;
+    margin-top: -0.0001rem;
+    
+}
+.contact a div.part3 span{
+}
+.contact a div.part3{
+	text-align: center;
+}
+.ss{
+	width:100%;
+	height:0.4rem;
+}
+.contact a .part1 i {
+	
+    background:url(../img/di1.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part2 i {
+	
+    background:url(../img/tubiao.png) -0.8rem -2.4rem no-repeat;
+    background-size: 100%;
+    width: 0.18rem;
+    height: 0.18rem;
+   
+    background-size:1rem;
+    display: inline-block;
+    line-height: 0.45rem;
+    margin-left: 0.35rem;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part3 i {
+    width: 0.18rem;
+    height: 0.18rem;
+    background: url(../img/tubiao.png) -0.8rem -2.6rem no-repeat;
+    background-size: 1rem;
+    display: inline-block;
+    margin-left: 0.21rem;
+}
+
+/*底部结束*/

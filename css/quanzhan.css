@@ -1,0 +1,791 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	box-sizing: border-box;
+	/*background:#F5F6FA ;*/
+	/*font-size: 0.08rem;*/
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	overflow: scroll;
+}
+
+/*头部开始*/
+.header{
+	width:100%;
+	height:0.44rem;
+	/*background:#007BE3;*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	
+}
+.header .header1{
+	width:100%;
+	height:0.44rem;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+  
+
+	
+.header a{
+/*	display: block;*/
+	width:20%;
+	height:100%;
+	color:#fff;
+	font-size: 0.15rem;
+	text-align: center;
+	line-height: 0.44rem;
+	
+}
+
+
+.header .span{
+
+	width:0.73rem;
+	height:0.31rem;
+	background-color: rgb(3, 21, 155);
+    color: rgb(255, 255, 255);
+    border-radius: 0.05rem;
+    font-size: 0.12rem;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 0.06rem;
+    left: 78%;
+    right: 3%;
+    height: 0.29rem;
+    line-height: 0.29rem;
+    border-radius:0.05rem;
+    font-size: 0.12rem;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 4;
+}
+
+
+/*头部结束*/
+
+
+/*banner开始*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    background: url(../img/qzbanner.png) center center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+/*banner结束*/
+
+
+/*全栈开发是什么开始*/
+.ui{
+	width:100%;
+	background: #F5F5F5;
+}
+.ui1{
+	height:3.76rem;
+	overflow: hidden;
+}
+.ui1H {
+    width: 100%;
+    height: 0.71rem;
+    box-shadow: 0px 0.02rem 0.02rem rgba(0,0,0,0.2);
+    padding: 0.1rem 0;
+    margin: 0 auto;
+    margin-bottom: 0.15rem;
+    background: url(../img/qztitleback.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui1H h2 {
+    width: 100%;
+    height: 0.2rem;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.ui1H h2 span {
+    font-weight:normal;
+}
+.uiH2 {
+    width: 2.77rem;
+    height: 0.015rem;
+    margin: 0.1rem auto;
+    position: relative;
+    background: url(../img/qztitleline.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui1con {
+    height: 3rem;
+    margin: 0 auto;
+}
+.ui1cons {
+    background: url(../img/qz1back.png) center center no-repeat;
+    background-size: 100%;
+}
+.qzdy {
+    width: 100%;
+    height:1.9rem;
+    overflow: hidden;
+}
+.qzdy p {
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-size: 0.14rem;
+    text-align: center;
+    /*line-height: 0.1rem;*/
+    letter-spacing: -0.5px;
+ }
+ .qzdy p span {
+    color: #01b5ff;
+    font-weight: 600;
+}
+/*全栈开发是什么结束*/
+
+
+/*六大服务开始*/
+.ui0 {
+    width: 100%;
+    height: 3.35rem;
+    background: #1b1d32;
+}
+.ui1con {
+    height: 3rem;
+    margin: 0 auto;
+}
+.ui0B{
+    width:3.4rem;
+    height:2.5rem;
+    margin: 0.1rem auto;
+}
+.ui0B ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ui0B li {
+    width:1.05rem;
+    height:1.05rem;
+    position: absolute;
+    right: 0;
+}
+.ui0B .ui0li1 {
+    left: 0;
+    top: 0.05rem;
+    background: url(../img/qzfw1.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.ui0B .ui0li2 {
+    left: 1.2rem;
+    top: 0.05rem;
+    background: url(../img/qzfw2.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui0B li div {
+    width: 100%;
+    height: 0.3rem;
+    color: #000;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.ui0B li p {
+    width: 1rem;
+    height: 0.5rem;
+    color: #000;
+    font-size: 0.13rem;
+    line-height: 0.16rem;
+    text-align: center;
+}
+.ui0B .ui0li3 {
+    right: 0;
+    top: 1.23rem;
+    background: url(../img/qzfw3.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui0B .ui0li4 {
+    left: 0;
+    top: 1.23rem;
+    background: url(../img/qzfw4.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui0B .ui0li5 {
+    left:1.2rem;
+    top: 1.23rem;
+    background: url(../img/qzfw5.png) center center no-repeat;
+    background-size: 100%;
+}
+.ui0B .ui0li6 {
+    right: 0;
+    top: 0.05rem;
+    background: url(../img/qzfw6.png) center center no-repeat;
+    background-size: 100%;
+}
+/*六大服务结束*/
+
+
+/*全栈开发能做什么开始*/
+.ui5 {
+    height:4.3rem;
+    background: url(../img/webkcback.png) center center repeat;
+}
+.ui5con {
+    height:3.45rem;
+    position: relative;
+    overflow: hidden;
+}
+.ui5con div {
+    position: absolute;
+}
+.qzzw1 {
+    background: url(../img/qzzw1.png) center center no-repeat;
+    background-size: 100%;
+    height:1.3rem;
+    width: 0.45rem;
+}
+.qzzw2 {
+    background: url(../img/qzzw2.png) center center no-repeat;
+    background-size: 100%;
+    height:1.3rem;
+    width:1.3rem;
+ }
+ .ui5con .qzzw3 {
+    background: url(../img/qzzw3.png) center center no-repeat;
+    background-size: 100%;
+    height:0.9rem;
+    width:0.9rem;
+ }
+ .ui5con .qzzw4 {
+    background: url(../img/qzzw7.png) center center no-repeat;
+    background-size: 100%;
+    height:1rem;
+    width:1rem;
+}
+.ui5con .qzzw5 {
+    background: url(../img/qzzw5.png) center center no-repeat;
+    background-size: 100%;
+    height:0.85rem;
+    width: 0.85rem;
+ }
+ .ui5con .qzzw6 {
+    background: url(../img/qzzw6.png) center center no-repeat;
+    background-size: 100%;
+    height:0.91rem;
+    width: 0.91rem;
+ }
+ .ui5con .qzzw7{
+    background: url(../img/qzzw4.png) center center no-repeat;
+    background-size: 100%;
+    height:0.7rem;
+    width: 0.7rem;
+ }
+ .ui5con .qzzw8{
+    background: url(../img/qzzw8.png) center center no-repeat;
+    background-size: 100%;
+    height:1rem;
+    width: 0.28rem;
+ }
+ .ui5con .qzzw9 {
+    background: #ff7616;
+    height: 0.5rem;
+    width:0.5rem;
+    border-radius: 50%;
+}
+.ui5con .qzzw10 {
+    background: #ffd906;
+    height: 0.55rem;
+    width: 0.55rem;
+    border-radius: 50%;
+}
+.ui5con .qzzw11 {
+    background: #ff7474;
+    height:0.55rem;
+    width: 0.55rem;
+    border-radius: 50%;
+}
+.ui5con .qzzw12 {
+    background: #8366ff;
+    height: 0.55rem;
+    width: 0.55rem;
+    border-radius: 50%;
+}
+.ui5con .qzzw13 {
+    background: #79e179;
+    height: 0.45rem;
+    width: 0.45rem;
+    border-radius: 50%;
+}
+
+/*全栈开发能做什么结束*/
+
+
+/*全栈高新就业开始*/
+.ui2 {
+    height:5.5rem;
+    background: #1b1d32;
+}
+.ui2box {
+    width: 100%;
+    height:4.5rem;
+    margin-top: -0.2rem;
+    padding-top: 0.2rem;
+    overflow: hidden;
+}
+.ui2bt {
+    width: 1.85rem;
+    height: 0.4rem;
+    margin: 0 auto;
+    padding: 0.1rem;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.15rem;
+    border-bottom: 0.005rem dashed #fff;
+    position: relative;
+    color: #00c298;
+}
+.ui2tiao {
+    width: 100%;
+    height:0.005rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0.05rem;
+}
+.ui2bfb {
+    width:3.5rem;
+    height:2.5rem;
+    margin: 0 auto;
+    background: url(../img/qzbili.png) center center no-repeat;
+    background-size: 100%;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    margin-left: 100%;
+ }
+ .btn {
+    display: block;
+    width: 1.25rem;
+    height:0.33rem;
+    margin: 0.1rem auto;
+    background: url(../img/qzanniu.png) center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 0.33rem;
+    font-size: 0.14rem;
+    margin-left: -1.5rem;
+}
+/*全栈高新就业结束*/
+
+
+/*就业学员成果展示开始*/
+.ui3 {
+    height:3.75rem;
+    margin-top: -0.3rem;
+}
+.ui3con {
+    height: 2.25rem;
+}
+.stu_lists {
+    width: 3.5rem;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+.title_name {
+    width: 100%;
+    height: 0.3rem;
+}
+.title_name p {
+    color: #fff;
+    font-size: 0.13rem;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+    background: #49d8bc;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width:0.65rem;
+}
+div .big_box {
+    width: 100%;
+    overflow: hidden;
+}
+.big_box {
+    width: 100%;
+    height: 1.75rem;
+    border: 0.005rem solid #49d8bc;
+}
+.big_box ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+element.style {
+    background: rgb(238, 238, 238);
+}
+.big_box li {
+    width: 100%;
+    height: 0.35rem;
+    overflow: hidden;
+ }
+ .swiper-slide{
+ position: relative;
+ }
+ .big_box li p {
+    height: 0.35rem;
+    overflow: hidden;
+    float: left;
+    font-size: 0.13rem;
+    color: #666;
+    line-height: 0.35rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.stu_name{
+	width:0.65rem;
+}
+.big_box li .Id-moneycolor {
+    color: #feaf34;
+    width: 0.9rem;
+}
+.stu_welfare{
+	width:1.9rem;
+	}
+.title_name p:nth-child(2) {
+    width: 0.9rem;
+    background: #39ceb1;
+}
+.title_name p:nth-child(3) {
+    width: 1.95rem;
+    background: #22c4a4;
+}
+.big_box .swiper-wrapper .stu_list2{
+	background: #fff;
+}
+/*就业学员成果展示结束*/
+
+
+/*vip定制开始*/
+.ui4con {
+    width: 3.5rem;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+.static ul {
+    width: 100%;
+}
+.static li {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0.1rem;
+}
+.static li .l01 {
+    height: 0.42rem;
+    width: 0.42rem;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.static li .l01 img {
+    height: 0.42rem;
+    width: 0.42rem;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.static li .r01 {
+    height: auto;
+    width: 2.85rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+.static .r01 p {
+    height: auto;
+    width: 100%;
+    font-size: 0.15rem;
+    overflow: hidden;
+    margin: 0;
+}
+.static .r01 .line1 {
+    height: auto;
+    width: 100%;
+    height: 0.005rem;
+    margin-top: 0.02rem;
+    overflow: hidden;
+    margin-left: -0.1rem;
+}
+.static .r01 p {
+    height: auto;
+    width: 100%;
+    font-size: 0.15rem;
+    overflow: hidden;
+    margin: 0;
+}
+.ui4con .descr {
+    color: #fff;
+    word-break: break-all;
+}
+.descr {
+    color: #333;
+    font-size: 0.12rem;
+    line-height: 0.19rem;
+    margin-top: 0.05rem;
+}
+.ui4 {
+    background: #1b1d32;
+    padding-bottom: 0.25rem;
+ /*   height:7.4rem;*/
+}
+/*vip定制结束*/
+
+/*选择优逸客开始*/
+.qzyyk {
+    width: 100%;
+    height: 0.75rem;
+    background: url(../img/qzyyk.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.biaodan .content {
+    padding: 0 0.35rem 0;
+}
+
+.form div{
+	width: 100%;
+    height: 0.3rem;
+    margin:0.15rem auto;
+}
+.biaodan .text1{
+   float: left;
+    color: #333;
+    font-size: 0.15rem;
+    background: url(../img/input.png) center center no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+    width:2.0rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-indent: 0.5em;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+}
+.form{
+	margin:0.2rem auto;
+}
+.biaodan strong{
+	color:red;
+	margin-right: 0.1rem;
+}
+.submit {
+    width: 100%;
+    height: 100%;
+   }
+   
+ .submit input {
+    display: block;
+    width: 1.5rem;
+    height: 0.4rem;
+    text-indent: 0;
+    color: #fff;
+    background: url(../img/btn.png) center center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    line-height: 0.4rem;
+    outline: none;
+    border: none;
+    font-size: 0.15rem;
+    margin:0.6rem auto 0 auto;
+}
+.biaodan span{
+    width: 0.6rem!important;
+    height: 0.3rem;
+    display: block;
+    color: #333;
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+    float: left;
+    margin-top: 0.2rem;
+    border: none!important;
+}
+
+/*选择优逸客结束*/
+
+/*copyright开始*/
+.tea_copyright {
+    width: 100%;
+    height:0.6rem;
+    font-size: 0.15rem;
+    overflow: hidden;
+    background: #F5F6FA;
+}
+.tea_copyright p {
+    color: #666;
+    font-size: 0.1rem;
+    text-align: center;
+    padding-top: 0.09rem;
+    }
+    
+    
+.cc{
+	width:100%;
+	height:0.3rem;
+}
+/*copyright结束*/
+
+
+
+/*底部开始*/
+.contact{
+    width: 100%;
+    height: 0.45rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+  	/*position: absolute;
+	bottom:0;*/
+	
+  z-index: 21;
+    }
+.contact .contact-list{
+ 	width: 100%;
+    height: 100%;
+    background:#e7e7e7;
+    text-align: center;
+   }
+.contact a {
+    width: 30%;
+    height: 0.8rem;
+    float: left;
+  }
+.contact a span{
+	float: left;
+    font-size: 0.13rem;
+     margin-top: 0.03rem;
+     margin-right: 0.03rem;
+    text-align: center;
+   }
+   .contact .phone {
+    width: 40%;
+    height: 0.9rem;
+    position: relative;
+    z-index: 99999;
+    box-shadow: 0 0 0.08rem rgba(255,126,0,0.1);
+    margin-top: -0.1rem;
+    /*background:#ff8d12;
+    border-radius: 0.05rem;*/
+   background: #E7E7E7;    }
+    .contact a div .part2 span {
+    float: left;
+    font-size: 0.15rem;
+    font-weight: bold;
+   /* margin-left: 0.5rem;*/
+      margin-top: 0.2rem;
+      color:#fff;
+      border-radius: 0.08rem;
+   }
+      
+    .contact a div {
+    width: 100%;
+    height: 100%;
+    font-size: 0.12rem;
+    color: #000;
+    text-align: left;
+    line-height: 0.35rem;
+    background: #e7e7e7;
+}
+   .contact a  .part2 {
+   width:100%;
+   height:0.45rem;
+    border-radius: 0.08rem;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 0.15rem #ff8d12;
+    background-color: #ff8d12;
+    margin-top: -0.0001rem;
+    
+}
+.contact a div.part3 span{
+}
+.contact a div.part3{
+	text-align: center;
+}
+.ss{
+	width:100%;
+	height:0.4rem;
+}
+.contact a .part1 i {
+	
+    background:url(../img/di1.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part2 i {
+	
+    background:url(../img/tubiao.png) -0.8rem -2.4rem no-repeat;
+    background-size: 100%;
+    width: 0.18rem;
+    height: 0.18rem;
+   
+    background-size:1rem;
+    display: inline-block;
+    line-height: 0.45rem;
+    margin-left: 0.35rem;
+}
+.contact a div i {
+    width: 0.16rem;
+    height: 0.16rem;
+    float: left;
+    line-height: 0.45rem;
+    margin-top: 0.14rem;
+    margin-left: 0.13rem;
+    
+}
+.contact a .part3 i {
+    width: 0.18rem;
+    height: 0.18rem;
+    background: url(../img/tubiao.png) -0.8rem -2.6rem no-repeat;
+    background-size: 1rem;
+    display: inline-block;
+    margin-left: 0.21rem;
+}
+
+/*底部结束*/

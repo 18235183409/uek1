@@ -1,0 +1,75 @@
+$(function(){    
+	$('.ui1 .ui1cont').animate({'marginTop':'0'},500)
+    $('.big_box li:even').css('background','#eee');
+     $('option').eq(3).attr('selected','selected');
+    $('.table_form input').eq(0).attr('placeholder','昵称');
+    $('.table_form input').eq(1).attr('placeholder','请输入11位电话号码');
+    $('.table_form input').eq(2).attr('placeholder','QQ');
+      $('.table_form input').eq(1).blur(function(){
+      	var value=$(this).val().length;
+      	if(value!=11){
+      		$(this).val('');
+      		$(this).attr('placeholder','输入错误')
+      	}else{
+      		$(this).attr('placeholder','请输入11位电话号码')
+      	}
+      })
+    //鼠标滚轮事件   
+    $(window).scroll(function(){
+		var s=$(window).scrollTop();
+		console.log(s)
+		if(s<300){
+            $(".header").css("background","rgba(0,123,227,0.4)")
+		}if(s>=300){
+            $(".header").css("background","#007be3")           
+		}
+		if(s>100){
+			$('.ui0B li').eq(0).find('p').css('animation','fwtx 0.5s 0s forwards')
+			$('.ui0B li').eq(1).find('p').css('animation','fwtx 0.5s 0.4s forwards')
+			$('.ui0B li').eq(2).find('p').css('animation','fwtx 0.5s 0.7s forwards')
+			$('.ui0B li').eq(3).find('p').css('animation','fwtx 0.5s 0.9s forwards')
+			$('.ui0B li').eq(4).find('p').css('animation','fwtx 0.5s 1s forwards')
+			$('.ui0B li').eq(5).find('p').css('animation','fwtx 0.5s 1.1s forwards')
+		}
+		if(s>=420){
+			$('.ui2zhe').animate({'height':0},400);
+		}
+		if(s>600){
+			$('.bpbbfbl').animate({'marginLeft':'0'},400);
+			$('.bpbbfbr').animate({'marginRight':'0'},400);
+		}
+		if(s>840){
+			$('.ui2 .btn').animate({'marginLeft':'2.26rem'},300,'easeInOutBack')
+		}
+		if(s>1100){
+			$('.stu_lists').css('animation','php1 1s 0s forwards')
+		}
+		if(s>1390){
+			$('.ui3 .btn').animate({'marginLeft':'2.26rem'},300,'easeInOutBack')
+		}
+		if(s>1500){
+          $('.php4l').animate({'opacity':1},500);
+          $('.ui41 .php4rcon').delay(300).animate({'marginLeft':'0'},500);
+          $('.ui42 .php4rcon').delay(600).animate({'marginLeft':'0'},500);
+          $('.ui43 .php4rcon').delay(800).animate({'marginLeft':'0'},500);
+          $('.ui44 .php4rcon').delay(1000).animate({'marginLeft':'0'},500);
+          $('.ui45 .php4rcon').delay(1100).animate({'marginLeft':'0'},500);
+          $('.ui46 .php4rcon').delay(1200).animate({'marginLeft':'0'},500);        
+		}
+		if(s>2200){
+			$('.phpzw1').animate({'marginLeft':'0.95rem'},500);
+			$('.phpzw2').animate({'marginRight':'0.43rem'},500);
+			$('.phpzw3').delay(400).animate({'marginLeft':'2.47rem'},500);
+			$('.phpzw4').delay(700).animate({'marginLeft':'0.68rem'},500);
+			$('.phpzw5').delay(700).animate({'marginRight':'0.22rem'},500);
+			$('.phpzw6').delay(1000).animate({'marginRight':'2.01rem'},500);
+		}
+		if(s>2640){
+			$('.web5bot').animate({'opacity':'1'},500)
+			$('.web5bot').animate({'marginLeft':'-1rem'},500)
+		}
+		if(s>2750){
+			$('.ui6 .btn').animate({'marginLeft':'2.26rem'},300,'easeInOutBack')
+		}
+    })
+})

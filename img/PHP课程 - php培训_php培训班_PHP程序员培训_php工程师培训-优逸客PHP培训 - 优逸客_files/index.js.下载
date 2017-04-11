@@ -1,0 +1,167 @@
+$(function () {
+    var mySwiper1 = new Swiper('#banner', {
+        direction: 'horizontal',
+        loop: true,
+        //是否需要分页器
+        pagination: '.swiper-pagination',
+        autoplay: 3000,
+        speed: 300,
+        grabCursor : true,
+        direction : 'horizontal',
+        slidesPerView : 'auto',
+        loopedSlides :4
+    })
+    // 表单
+    // var bd=false;
+    // $('#name').blur(function(){   
+    //      if ($(this).val() == '') {  
+    //        if($('.nametr')){
+    //            $('.nametr').css('display','block'); 
+    //         }else{
+    //            $(this).after('<tr class="nametr"><span class="biaodanspan">输入有误<span></tr>'); 
+    //        }             
+    //            bd=false;
+    //      } 
+    //      else{
+    //         if($('.nametr')){
+    //            $('.nametr').css('display','none'); 
+    //         }
+    //          bd=true;
+    //      }
+    //  });
+    //  $('#iphone').blur(function(){  
+    //      if ($(this).val() == '') {  
+    //        if($('.iponetr')){
+    //            $('.iponetr').css('display','block'); 
+    //         }else{
+    //            $(this).after('<tr class="iponetr"><span class="biaodanspan">输入有误<span></tr>'); 
+    //        }             
+    //            bd=false;
+    //      } 
+    //      else{
+    //         if($('.iponetr')){
+    //            $('.iponetr').css('display','none'); 
+    //         }
+    //          bd=true;
+    //      }
+    // });
+    //   $('#QQ').blur(function(){  
+    //      if ($(this).val() == '') {  
+    //        if($('.QQtr')){
+    //            $('.QQtr').css('display','block'); 
+    //         }else{
+    //            $(this).after('<tr class="QQtr"><span class="biaodanspan">输入有误<span></tr>'); 
+    //        }             
+    //            bd=false;
+    //      } 
+    //      else{
+    //         if($('.QQtr')){
+    //            $('.QQtr').css('display','none'); 
+    //         }
+    //          bd=true;
+    //      }
+    // });
+    //   $('.submit input').attr('type','')
+    //   if(bd){
+    //       $('.submit input').attr('type','submit')
+    //   }else{
+    //     $('.submit input').attr('type','')
+    //   }
+//选中状态
+$('.content ul li a').on('touchstart',function(e){
+    $('.content ul li a').css('boxShadow','0 0 0.2rem rgba(0,0,0,0)');
+    $(this).css('boxShadow','0 0 0.2rem rgba(0,0,0,0.2)');
+})
+$('.content ul li a').on('touchend',function(){
+    $('.content ul li a').css('boxShadow','0 0 0.2rem rgba(0,0,0,0)'); 
+})
+$('.contact a.phone .part2').on('touchstart',function(){
+    $(this).css('backgroundColor','#ff7112');
+    $(this).css('borderRadius','0.08rem'); 
+    $(this).css('boxShadow','0 0 0.15rem #ff7112'); 
+})
+$('.contact a.phone .part2').on('touchend',function(){
+    $(this).css('backgroundColor','#ff8d12');
+    $(this).css('boxShadow','0 0 0.15rem #ff8d12')
+})
+//点击数
+$('.media_box a').find('.click span').each(function(index,val){
+    $(this).text('点击量：'+parseInt(Math.random()*100+10));
+})
+$('.media_box a').find('.share span').each(function(index,val){
+    $(this).text('分享量：'+parseInt(Math.random()*100+10));
+})
+//获取总页数并生成li
+ var len=parseInt($('.tea_tiaos a').eq(4).attr('href').slice(32,34));  
+//获取当前页面的catid
+var cat=parseInt($('.tea_tiaos a').eq(4).attr('href').slice(29,31));
+for(var i=1;i<=len;i++){
+    $('<li><span></span><a href="http://m.sxuek.com/html/list-'+cat+'-'+i+'.html">第'+i+'页</a></li>').appendTo($('.yema ul'));
+}
+// 分页消失
+$('.pagecom').on('touchend',function(){
+    $('.pagea').css('height','0');
+    $('.yema').css('height','auto');
+    $('.tea_copyright').css('display','block'); 
+})
+//分页出现
+$('.tea_tiaos .a1').on('click',function(){
+        var top=$(window).scrollTop();
+        top=top+200;        
+        setTimeout(function(){$(window).scrollTop(top);},10)
+     if(len<=5){
+        var hei=len*0.75+0.2;
+        var zon=hei+0.9
+        $('.pagea').css('height',hei+'rem');
+        $('.yema').css('height',zon+'rem');
+    }else{
+        $('.pagea').css('height','3.8rem');
+        $('.yema').css('height','4.7rem');
+    }    
+        $('.tea_copyright').css('display','none');
+    })
+// 分页滑动
+var curr=$('.a1').html().slice(1,-1);
+$('.pagea li').removeClass('xuan').eq(curr-1).addClass('xuan');
+if(len>5){
+    var start;
+    var movet;
+    var this_top
+    $(".pagecon").find("ul").on("touchstart",function(e){
+        e.stopPropagation()
+        start=e.originalEvent.changedTouches[0].pageY;
+        this_top=$(".pagecon").find("ul").offset().top;
+        return false;
+    })
+    $(".pagecon").find("ul").on("touchmove",function(e){
+        e.stopPropagation()
+        var move=e.originalEvent.changedTouches[0].pageY;
+        movet=move-start;
+        $(".pagecon").find("ul").css({top:movet+"px"})
+        return false;
+    })
+    $('.pagecon').find("ul").on('touchend',function(e){
+          e.stopPropagation(); 
+          var tops=parseInt($(".pagecon").find("ul").css('top'));   
+          if(tops<=-(len-5)*35){                
+                tops=-(len-5)*35;
+                $('.pagecon').find('ul').css('top',-(len-5)*35+'px');
+            }else if(tops>=0){
+                $('.pagecon').find('ul').css('top',0);
+                tops=0;
+            } 
+            for(var i=0;i<=len;i++){
+             $('.pagecon').find('ul').on('touchend','li',function(){
+                var index=$(this).index()+1;
+                location.href='http://m.sxuek.com/html/list-'+cat+'-'+index+'.html';
+            })
+          }   
+          $('.pagecon').off("touchmove");
+          return false;
+    }) 
+}  
+
+
+
+
+})
